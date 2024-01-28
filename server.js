@@ -8,7 +8,7 @@ app.use(cors())
 
 const port = process.env.PORT || 3000;
 
-app.use("/", (req, res) => {
+app.get("/", (req, res) => {
     res.json({ message: "Hello world" })
 })
 
