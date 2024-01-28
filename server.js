@@ -12,6 +12,10 @@ app.get("/", (req, res) => {
     res.json({ message: "Hello world" })
 })
 
+app.get("/home", (req, res) => {
+    res.json({ message: "Home API endpoint" })
+})
+
 app.listen(port, () => {
     console.log(`Server running on port ${port}`)
 })
